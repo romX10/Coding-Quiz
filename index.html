@@ -1,1 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
 
+    <ul class="nav nav-pills nav-fill mb-2">
+        <li class="nav-item">
+          <a class="nav-link" href="#">View Highscores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" id="timer">Timer:</a>
+        </li>
+    </ul>
+
+    <div class="" id="title-screen">
+        <h1 class="d-flex justify-content-center">Coding Question Quiz</h1>
+        <p class="d-flex justify-content-center mb-4">Placeholder text, something about starting this quiz and doing your best!</p>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" id="start-button" type="button">Start</button>
+        </div>
+    </div>
+
+    <div class="d-none" id="question-1">
+        <h1 class="d-flex justify-content-center">First Question</h1>
+        <div class="list-group d-flex justify-content-center">
+            <button type="button" class="list-group-item list-group-item-action answer answer-false">1. First Option</button>
+            <button type="button" class="list-group-item list-group-item-action answer answer-false">2. Second Option</button>
+            <button type="button" class="list-group-item list-group-item-action answer answer-correct">3. Third / Correct Option</button>
+            <button type="button" class="list-group-item list-group-item-action answer answer-false">4. Fourth Option</button>
+        </div>
+        <h3 class="answer-outcome">Correct</h3>
+    </div>
+
+    <div class="d-none" id="question-2">
+        <h1 class="d-flex justify-content-center">Second Question</h1>
+        <div class="list-group d-flex justify-content-center">
+            <button type="button" class="list-group-item list-group-item-action answer answer-false">1. First Option</button>
+            <button type="button" class="list-group-item list-group-item-action answer answer-false">2. Second Option</button>
+            <button type="button" class="list-group-item list-group-item-action answer answer-correct">3. Third / Correct Option</button>
+            <button type="button" class="list-group-item list-group-item-action answer answer-false">4. Fourth Option</button>
+        </div>
+        <h3 class="answer-outcome border-top mt-4">Correct</h3>
+    </div>
+
+    <div class="d-none" id="question-3">
+        <h1 class="d-flex justify-content-center">Third Question</h1>
+        <div class="list-group d-flex justify-content-center">
+            <button type="button" class="list-group-item list-group-item-action">1. First Option</button>
+            <button type="button" class="list-group-item list-group-item-action">2. Second Option</button>
+            <button type="button" class="list-group-item list-group-item-action">3. Third / Correct Option</button>
+            <button type="button" class="list-group-item list-group-item-action">4. Fourth Option</button>
+        </div>
+        <h3 class="answer-outcome">Correct</h3>
+    </div>
+
+    <div class="d-none" id="end-screen">
+        <h1 class="d-flex justify-content-center mb-4">All done!</h1>
+        <h2 class="d-flex justify-content-center mb-4" id="score-label"> </h2>
+        <div class="d-flex justify-content-center">
+            <div class="col-auto mx-2">
+              <label for="inputInit" class="col-form-label">Enter Initials Here:</label>
+            </div>
+            <div class="col-auto">
+              <input type="Initials" id="inputInit" class="form-control" aria-describedby="InitialInputLine">
+            </div>
+            <div class="col-auto mx-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src=".\assets\js\script.js"></script>
+</html>
